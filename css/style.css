@@ -100,7 +100,7 @@ nav a{
 .container{
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-auto-rows: auto;
+  grid-template-rows: repeat(5, auto);
   grid-row-gap: 15px;
   /* Requirement 5 code here*/
 
@@ -117,7 +117,9 @@ header{
   color: white;
   height: 400px; /* Parallax effect */
 
-  column-span: all;
+  grid-column: 1 / -1;
+  /* grid-column-start: 1;
+  grid-column-end: all; */
   grid-row-start: 1;
   grid-row-end: span 1;
 
@@ -129,7 +131,7 @@ header{
 
 
 .about-image{
-  column-span: all;
+  grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
   grid-row-start: 2;
@@ -146,7 +148,7 @@ header{
 }
 
 .method-image{
-  column-span: all;
+  grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
   grid-row-start: 3;
@@ -163,7 +165,7 @@ header{
 }
 
 .clients-image{
-  column-span: all;
+  grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
   grid-row-start: 4;
@@ -180,7 +182,7 @@ header{
 }
 
 .contact-image {
-  column-span: all;
+  grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
   grid-row-start: 5;
@@ -203,9 +205,11 @@ header{
 
 .text-block{
   background-color: rgba(255, 255, 255, .8);
-  border: 10px solid black;
+  border: 10px solid black; 
   padding: 30px;
-  margin: auto;
+
+  align-self: center;
+
   /* align-content: center; */
 
   /* Your code here */
@@ -229,44 +233,44 @@ header{
 
   
 
-  .about-image{
+  .about-image{ 
     grid-column-start: 2;
     grid-column-end: span 2;
   
   }
 
-  .about{
+  .about{ 
     grid-column-start: 3;
     grid-column-end: span 2;
   }
 
-  .method-image{
+  .method-image{ 
     grid-column-start: 3;
     grid-column-end: span 2;
   }
 
-  .method{
+  .method{ 
     grid-column-start: 2;
     grid-column-end: span 2;
   }
 
-  .clients-image{
+  .clients-image{ 
     grid-column-start: 2;
     grid-column-end: span 2;
   }
 
-  .clients{
+  .clients{ 
     grid-column-start: 3;
     grid-column-end: span 2;
     
   }
 
-  .contact-image{
+  .contact-image{ 
     grid-column-start: 3;
     grid-column-end: span 2;
   }
 
-  .contact{
+  .contact{ 
     grid-column-start: 2;
     grid-column-end: span 2;
   }
