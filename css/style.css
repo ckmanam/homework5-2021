@@ -77,8 +77,10 @@ nav a{
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
-  position: relative;
-  bottom: 40px;
+  /* position: relative;
+  bottom: 40px; */
+  position: absolute;
+  top: -40px;
   
 
   /* Requirement 3a code here*/
@@ -86,7 +88,7 @@ nav a{
 }
 
 .skip a:focus{
-  position: static;
+  top: 0;
 }
 /* Requirement 3b code here*/
 
