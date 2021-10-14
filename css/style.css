@@ -118,8 +118,6 @@ header{
   height: 400px; /* Parallax effect */
 
   grid-column: 1 / -1;
-  /* grid-column-start: 1;
-  grid-column-end: all; */
   grid-row-start: 1;
   grid-row-end: span 1;
 
